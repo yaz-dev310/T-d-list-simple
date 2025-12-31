@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.css">
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <title> To-do list </title>
+</head>
+
+<body>
+  <main>
+    <div class="todo-main-container">
+      <h1> To-Do List</h1>
+      <div class="todo-app-wrapper">
+        <div class="todo-input-field-wrapper">
+          <input id="input" type="text" placeholder="Add a new task here...">
+        </div>
+        <div id="plus" class="todo-add-button-wrapper">
+          <i id="fa-plus" class="fas fa-plus fa-lg"></i>
+        </div>
+      </div>
+      <ol spellcheck="false"></ol>
+    </div>
+
+    <div class="todo-instructions-wrapper">
+      <h1> How to use </h1>
+      <div class="todo-instruction-block">
+        <div>
+          <h3> Add a task </h3>
+        </div>
+        <p> Click inside the yellow box and add text. </p>
+        <p> Once done, press Enter or click on the <i class="fas fa-plus fa-lg"></i> button. </p>
+      </div>
+      <div class="todo-instruction-block">
+        <div>
+          <h3> Complete a task </h3>
+        </div>
+        <p class="todo-text-inline"> Hover over the task and click<i class="far fa-square fa-lg"></i> </p>
+      </div>
+      <div class="todo-instruction-block">
+        <div>
+          <h3> Edit a task </h3>
+        </div>
+        <p class="todo-text-inline"> Hover over the task and click<i class="fas fa-pencil-alt fa-lg"> </i> </p>
+        <p> You can now edit the task. </p>
+        <p> Once done, press Enter or click the pencil icon again. </p>
+        <p> A completed task cannot be edited! </p>
+        <p> In order to do so, un-click the square box first. </p>
+      </div>
+      <div class="todo-instruction-block">
+        <div>
+          <h3> Remove a task </h3>
+        </div>
+        <p class="todo-text-inline"> Hover over the task and click<i class="fas fa-trash fa-lg"></i> </p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <a href="https://github.com/verona-hub/to-do-list" target="_blank" title="Github profile" rel="noopener noreferrer">
+      <img class="github" src="data:image/jpeg;base64,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" alt="github icon">
+      <p> verona-hub </p>
+    </a>
+  </footer>
+
+  <script src="jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
